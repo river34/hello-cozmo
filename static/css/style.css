@@ -1,0 +1,54 @@
+body
+{
+    background: #ffd024;
+}
+
+.start img {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.start img.bg {
+    z-index: 0;
+}
+
+.start img.blink {
+    z-index: 1;
+}
+
+.start
+{
+    width: auto;
+    color: white;
+    font-size: 24px;
+    font-family: Arial;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.blink {
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+
+#canvas {
+    display: block;
+    margin: 0 auto;
+}
